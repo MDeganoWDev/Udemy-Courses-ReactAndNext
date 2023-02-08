@@ -1,6 +1,6 @@
+import "./App.css";
 import AddUser from "./components/Users/AddUser";
 import ListUser from "./components/Users/ListUser";
-import "./App.css";
 import { useState } from "react";
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
     });
   };
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <ListUser users={usersList} />
-    </div>
+    </>
   );
 }
 

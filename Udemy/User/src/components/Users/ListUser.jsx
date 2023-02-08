@@ -1,5 +1,5 @@
-import Card from "../UI/Card";
 import classes from "./ListUser.module.css";
+import Card from "../UI/Card";
 
 const ListUser = (props) => {
   return (
