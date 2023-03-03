@@ -15,9 +15,9 @@ const MeetupItem = (props) => {
       favoritesCtx.addFavorite({
         id: props.id,
         title: props.title,
-        address: props.address,
-        image: props.image,
         description: props.description,
+        image: props.image,
+        address: props.address,
       });
     }
   };
@@ -30,12 +30,12 @@ const MeetupItem = (props) => {
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
-          <adress>{props.address}</adress>
+          <address>{props.address}</address>
           <p>{props.description}</p>
         </div>
         <div className={classes.actions}>
           <button onClick={toggleFavoritesHandler}>
-            {itemIsFavorite ? "Remove from favorites" : "To Favorites"}
+            {itemIsFavorite ? "Remove from Favorites" : "Add to Favorites"}
           </button>
         </div>
       </Card>
